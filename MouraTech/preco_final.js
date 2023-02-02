@@ -9,10 +9,36 @@
 // Retorno: (string)
 // Observação: Retornar o valor no formato monetário (localizado para o Brasil), por exemplo R$ 10,50.
 
-function preco_final(preco, pagamento)
+function preco_final(preco,pagamento)
 {
-    if(pagamento === 1)
+    if (pagamento === 1)
     {
-        
+        valor = preco - (preco * (15/100));
+        // Converte o valor para String
+        convert = valor + ""
+        return `R$ ${convert},00`;
+    }
+    else
+    if (pagamento === 2)
+    {
+        valor = preco - (preco * (10/100));
+        convert = valor + ""
+        return `R$ ${convert},00`;
+    }
+    else
+    if (pagamento === 3)
+    {
+        valor = preco - (preco * (5/100));
+        convert = valor + ""
+        return `R$ ${convert},00`;
+    }
+    else
+    if (pagamento === 4 )
+    {
+        convert = preco + ""
+        return `R$ ${convert},00`;
     }
 }
+
+//Teste
+console.log(preco_final(100,3));
