@@ -19,17 +19,17 @@ function imc(altura,peso)
         return 'Baixo peso';
     }
     else
-    if (calculoImc >= 18.5 && calculoImc <= 24.9)
+    if (calculoImc >= 18.5 && calculoImc < 25)
     {
         return 'Peso normal';
     }
     else
-    if (calculoImc >= 25 && calculoImc <= 29.9)
+    if (calculoImc >= 25 && calculoImc < 30)
     {
         return 'Excesso de peso';
     }
     else
-    if (calculoImc > 30 && calculoImc <= 35)
+    if (calculoImc >= 30 && calculoImc <= 35)
     {
         return 'Obesidade';
     }

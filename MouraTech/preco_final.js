@@ -14,29 +14,24 @@ function preco_final(preco,pagamento)
     if (pagamento === 1)
     {
         valor = preco - (preco * (15/100));
-        // Converte o valor para String
-        convert = valor + ""
-        return `R$ ${convert},00`;
+        return `R$ ${valor},00`;
     }
     else
     if (pagamento === 2)
     {
         valor = preco - (preco * (10/100));
-        convert = valor + ""
-        return `R$ ${convert},00`;
+        return `R$ ${valor},00`;
     }
     else
     if (pagamento === 3)
     {
         valor = preco - (preco * (5/100));
-        convert = valor + ""
-        return `R$ ${convert},00`;
+        return `R$ ${valor},00`;
     }
     else
     if (pagamento === 4 )
     {
-        convert = preco + ""
-        return `R$ ${convert},00`;
+        return `R$ ${preco},00`;
     }
 }
 
