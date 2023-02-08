@@ -9,7 +9,7 @@ function fatorial (numeros)
         impressao += `${i}`;
         if(i>1)
         {
-            impressao += ` X `;
+            impressao += ` x `;
         }
     }
     impressao += ` = ${resultado}`;

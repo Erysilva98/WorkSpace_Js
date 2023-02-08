@@ -6,29 +6,29 @@ function agrupamento(numeros)
     let contador3 = 0; 
     let contador4 = 0;
 
-    for(let i=0; i< numeros.length; i++)
+    for(let i=0; i < numeros.length; i++)
     {
-        if(numeros[i] >= 0 && numeros <= 25)
+        if((numeros[i] >=0) && (numeros[i] <=25))
         {
-            contador1++;
-            console.log(contador1)
+            contador1 += 1;
         }
         else
-        if( numeros[i] >25 && numeros <= 50)
+        if((numeros[i] > 25) && (numeros[i] <=50))
         {
-            contador2++;
+            contador2 += 1;
         }
         else
-        if( numeros[i] >50 && numeros <= 75)
+        if((numeros[i] >50) && (numeros[i] <=75))
         {
-            contador3++;
+            contador3 += 1;
         }
         else
-        if(numeros[i] > 75 && numeros <=100)
+        if((numeros[i] >75) && (numeros[i] <=100))
         {
-            contador4++;
+            contador4 += 1;
         }
     }
+
     return [contador1,contador2,contador3,contador4];
 }
 
