@@ -13,27 +13,24 @@ function preco_final(preco,pagamento)
 {
     if (pagamento === 1)
     {
-        valor = preco - (preco * (15/100));
+        valor = preco - (preco * 0.15);
         return `R$ ${valor},00`;
     }
     else
     if (pagamento === 2)
     {
-        valor = preco - (preco * (10/100));
-        return `R$ ${valor},00`;
+        valor = preco - (preco * 0.10);
+        return valor.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
     }
     else
     if (pagamento === 3)
     {
-        valor = preco - (preco * (5/100));
-        return `R$ ${valor},00`;
+        valor = preco - (preco * 0.05);
+        return valor.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
     }
     else
     if (pagamento === 4 )
     {
-        return `R$ ${preco},00`;
+        return preco.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
     }
 }
-
-//Teste
-console.log(preco_final(100,3));
