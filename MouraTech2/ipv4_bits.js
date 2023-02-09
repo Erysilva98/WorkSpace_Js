@@ -5,7 +5,7 @@ function ipv4_bits(ip)
 
     for (let i=0; i < partes.length; i++)
     {
-        let inicio = parseInt(partes[i].toString(2));
+        let inicio = parseInt(partes[i]).toString(2);
 
         while(inicio.length < 8)
         {
