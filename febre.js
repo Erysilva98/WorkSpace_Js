@@ -4,34 +4,34 @@ function febre(temperaturas)
 
     for(let i=0; i < temperaturas.length; i++)
     {
-        let atual = temperaturas[i];
-
-        if(atual >= 41)
+        if(temperaturas[i] >= 41)
         {
-            estado[i] = "Hipertemia"
+            estado.push("Hipertermia")
         }
         else
-        if(atual >= 39.6 )
+        if(temperaturas[i] >= 39.6)
         {
-            estado[i] = "Febre Alta"
+            estado.push("Febre Alta")
         }
         else
-        if(atual >= 37.8)
+        if(temperaturas[i] >= 37.8)
         {
-            estado[i] = "Febre"
+            estado.push("Febre")
         }
         else
-        if(atual >= 35.1)
+        if(temperaturas[i] >= 35.1)
         {
-            estado[i] = "Normal"
+            estado.push("Normal")
         }
         else
-        if(atual <= 35)
+        if(temperaturas[i] <= 35)
         {
-            estado[i] = "Hipotermia"
+            estado.push("Hipotermia")
         }
     }
     return estado
 }
 
-console.log(febre([35.41,33.12,41.06,38.9,40.22]))
+temperaturas = [35.41,33.12,41.06,38.9,40.22]
+
+console.log(febre(temperaturas))
