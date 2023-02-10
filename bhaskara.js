@@ -1,0 +1,5 @@
+
+function bhaskara(numero)
+{
+    
+}
