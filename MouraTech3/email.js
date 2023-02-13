@@ -1,13 +1,11 @@
-const alunos = require('./alunos.json')
+//const alunos = require('./alunos.json')
 
 function email(alunos)
 {
-    
-    const dados = alunos.filter(alunos => alunos.email)
+    const dados = alunos.map(alunos => alunos.email)
+    const info = dados.join(";")
 
-    dados.forEach(alunos => {
-        return `${alunos.email};`
-    },);
+    return info
 }
 
-console.log(email(alunos));
+//console.log(email(alunos))
