@@ -1,7 +1,9 @@
-// Elabore uma função que recebe três valores numéricos (number) e retorne um array contendo os 3 números em ordem decrescente:
-// Nome da função: ordenar_3_numeros
-// Paramêtros: (number, number, number)
-// Retorno: [number, number, number]
+/*
+Elabore uma função que recebe três valores numéricos (number) e retorne um array contendo os 3 números em ordem decrescente:
+Nome da função: ordenar_3_numeros
+Paramêtros: (number, number, number)
+Retorno: [number, number, number]
+*/
 
 function ordenar_3_numeros(numero1, numero2, numero3)
 {

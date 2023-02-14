@@ -1,3 +1,12 @@
+/*
+O aumento da temperatura é uma reação do corpo a infecções e outras doenças e quando apresentamos febre isso significa que algo não está bem com o nosso corpo.
+Crie uma função que recebe um array de valores, contendo medidas de temperatura do corpo, e retorne um array de mesmo tamanho informando a situação (Hipertermia, Febre Alta, Febre, Normal, Hipotermia).
+
+Nome da função: febre
+Paramêtros: array
+Retorno: array
+*/
+
 function febre(temperaturas)
 {
     let estado = [];

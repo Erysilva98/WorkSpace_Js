@@ -1,7 +1,9 @@
-// Elabore uma função que recebe um valor numérico (number) e retorne se ele é par ou ímpar:
-// Nome da função: par_impar
-// Paramêtros: (number)
-// Retorno: string
+/*
+Elabore uma função que recebe um valor numérico (number) e retorne se ele é par ou ímpar:
+Nome da função: par_impar
+Paramêtros: (number)
+Retorno: string
+*/
 
 function par_impar(numero){
 

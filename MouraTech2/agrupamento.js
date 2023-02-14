@@ -1,3 +1,20 @@
+/*
+Elabore uma função que recebe um array de números e conte quantos estão nos seguintes intervalos: [0 até 25], [>25 até 50], [>50 até 75], [>75 até 100].
+
+A função deve retornar um array contendo as quatro contagens.
+
+Nome da função: agrupamento
+
+Paramêtros: array [number, number, number, ...]
+
+Retorno: array [number, number, number, number]
+
+exemplo 1:
+
+Entrada: [ 10, 5, 80, 60, 25, 99, 81, 92 ]
+
+Saída: [ 3, 0, 1, 4 ]
+*/
 
 function agrupamento(numeros)
 {
